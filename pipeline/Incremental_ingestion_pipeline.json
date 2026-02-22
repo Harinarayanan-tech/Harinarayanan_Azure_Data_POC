@@ -13,12 +13,6 @@
 						"dependencyConditions": [
 							"Succeeded"
 						]
-					},
-					{
-						"activity": "currentdate",
-						"dependencyConditions": [
-							"Succeeded"
-						]
 					}
 				],
 				"policy": {
@@ -113,27 +107,6 @@
 						}
 					},
 					"firstRowOnly": false
-				}
-			},
-			{
-				"name": "currentdate",
-				"type": "SetVariable",
-				"dependsOn": [],
-				"policy": {
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [
-					{
-						"name": "currentdate"
-					}
-				],
-				"typeProperties": {
-					"variableName": "currentdate",
-					"value": {
-						"value": "@utcNow()",
-						"type": "Expression"
-					}
 				}
 			}
 		],
