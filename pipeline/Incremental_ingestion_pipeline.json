@@ -30,7 +30,7 @@
 				]
 			},
 			{
-				"name": "Lookup1",
+				"name": "Json_Extract",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -40,7 +40,30 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "JsonSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "JsonReadSettings"
+						}
+					},
+					"dataset": {
+						"referenceName": "dynamicJson",
+						"type": "DatasetReference",
+						"parameters": {
+							"container": "bronze",
+							"folder": "cdc",
+							"file": "CDC"
+						}
+					},
+					"firstRowOnly": false
+				}
 			}
 		],
 		"parameters": {
