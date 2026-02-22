@@ -1,0 +1,9 @@
+{
+	"name": "Hari-data-project",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "48554bf3-2ae6-4b20-9409-b2ea156870b6",
+		"tenantId": "bc70038f-25fa-42f7-82fd-e371c3ceb23f"
+	}
+}
