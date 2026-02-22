@@ -5,6 +5,8 @@
 			{
 				"name": "Copy_Source_SQL to DataLake",
 				"type": "Copy",
+				"state": "Active",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Json_Extract",
