@@ -61,7 +61,7 @@
 						"parameters": {
 							"container": "bronze",
 							"folder": "cdc",
-							"file": "CDC"
+							"file": "CDC.json"
 						}
 					},
 					"firstRowOnly": false
