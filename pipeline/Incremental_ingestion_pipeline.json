@@ -15,7 +15,7 @@
 						]
 					},
 					{
-						"activity": "current date",
+						"activity": "currentdate",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -116,7 +116,7 @@
 				}
 			},
 			{
-				"name": "current date",
+				"name": "currentdate",
 				"type": "SetVariable",
 				"dependsOn": [],
 				"policy": {
@@ -125,11 +125,11 @@
 				},
 				"userProperties": [
 					{
-						"name": "curr_date"
+						"name": "currentdate"
 					}
 				],
 				"typeProperties": {
-					"variableName": "current",
+					"variableName": "currentdate",
 					"value": {
 						"value": "@utcNow()",
 						"type": "Expression"
@@ -149,7 +149,7 @@
 			}
 		},
 		"variables": {
-			"current": {
+			"currentdate": {
 				"type": "String"
 			}
 		},
